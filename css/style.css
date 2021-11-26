@@ -96,3 +96,34 @@ p a {
     font-weight: 600;
     padding-left: 10px;
 }
+
+@media (min-width: 992px) {
+
+    .content {
+        display: flex;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header, .info {
+        text-align: left;
+    }
+
+    .header {
+        font-size: 50px;
+    }
+
+    .info {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+}
