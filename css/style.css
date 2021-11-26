@@ -37,6 +37,17 @@ button {
     color: hsl(246, 25%, 77%);
 }
 
+input, label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 8px 1px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
 .blue {
     background-color: hsl(248, 32%, 49%);
     box-shadow: 0 8px 1px 0 rgba(0, 0, 0, 0.3);
@@ -44,14 +55,9 @@ button {
     padding: 20px 70px;
 }
 
-.blue span{
+.blue span {
     color: white;
     font-weight: 600;
-}
-
-.card {
-    border-radius: 10px;
-    padding: 20px;
 }
 
 .green {
@@ -62,7 +68,31 @@ button {
     text-transform: uppercase;
 }
 
-input, label {
-    width: 100%;
-    margin-bottom: 20px;
+.form p {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+input {
+    border: 1px hsl(246, 25%, 77%) solid;
+    border-radius: 5px;
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+    padding: 10px;
+    outline: none;
+}
+
+p a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+    padding-left: 10px;
 }
