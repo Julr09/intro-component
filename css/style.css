@@ -1,0 +1,68 @@
+body {
+    background: url("../images/bg-intro-mobile.png") hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header, .info {
+    text-align: center;
+    color: white;
+}
+
+.header {
+    font-weight: 700;
+}
+
+.info {
+
+    margin-bottom: 70px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 100%;
+    color: hsl(246, 25%, 77%);
+}
+
+.blue {
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 8px 1px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    padding: 20px 70px;
+}
+
+.blue span{
+    color: white;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.green {
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 7px 1px 0 hsl(154, 66%, 42%);
+    color: white;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+input, label {
+    width: 100%;
+    margin-bottom: 20px;
+}
