@@ -40,6 +40,7 @@ button {
 input, label {
     width: 100%;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .card {
@@ -97,7 +98,36 @@ p a {
     padding-left: 10px;
 }
 
+.icon {
+    display: none;
+    position: absolute;
+    top: 15%;
+    right: 1.5rem;
+}
+
+.error-message {
+    color: hsl(0, 100%, 74%);
+    display: none;
+    font-size: 13px;
+    text-align: right;
+}
+
+label.error .icon,
+label.error .error-message{
+    display: block;
+}
+
+label.error input {
+    border: 2px hsl(0, 100%, 74%) solid;
+    color: hsl(0, 100%, 74%);
+}
+
+
 @media (min-width: 992px) {
+
+    body {
+        background: url("../images/bg-intro-desktop.png") hsl(0, 100%, 74%);
+    }
 
     .content {
         display: flex;

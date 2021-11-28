@@ -20,7 +20,8 @@
             <div class="text">
                 <div class="wrapper">
                     <h1 class="header">Learn to code by watching others</h1>
-                    <p class="info">See how experienced developers solve problems in real-time. Watching scripted tutorials
+                    <p class="info">See how experienced developers solve problems in real-time. Watching scripted
+                        tutorials
                         is
                         great, but
                         understanding how developers think is invaluable.</p>
@@ -29,20 +30,28 @@
             <div class="form">
                 <button class="blue"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
                 <div class="card">
-                    <form action="">
+                    <form action="" id="form" novalidate>
                         <label for="name">
                             <input type="text" id="name" class="input" placeholder="First Name">
+                            <img class="icon" src="images/icon-error.svg" alt="icon-error">
+                            <span class="error-message">First Name cannot be empty</span>
                         </label>
                         <label for="last-name">
                             <input type="text" id="last-name" class="input" placeholder="Last Name">
+                            <img class="icon" src="images/icon-error.svg" alt="icon-error">
+                            <span class="error-message">Last Name cannot be empty</span>
                         </label>
                         <label for="email">
                             <input type="email" id="email" class="input" placeholder="Email Address">
+                            <img class="icon" src="images/icon-error.svg" alt="icon-error">
+                            <span class="error-message">Looks like this is not an email</span>
                         </label>
                         <label for="password">
-                            <input type="password" id="password" class="input" placeholder="password">
+                            <input type="password" id="password" autocomplete="on" class="input" placeholder="password">
+                            <img class="icon" src="images/icon-error.svg" alt="icon-error">
+                            <span class="error-message">Password cannot be empty</span>
                         </label>
-                        <button class="green">Claim your free trial</button>
+                        <button type="submit" id="submit" class="green">Claim your free trial</button>
                     </form>
                     <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
                 </div>
@@ -51,5 +60,6 @@
     </div>
 </main>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
